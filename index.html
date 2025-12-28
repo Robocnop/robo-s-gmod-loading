@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mon Serveur Gmod</title>
+    <style>
+        body { background: #1a1a1a; color: white; font-family: sans-serif; text-align: center; }
+        .loader { margin-top: 20%; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <h1 id="servername">Chargement...</h1>
+    <div class="loader">
+        Map: <span id="mapname">N/A</span><br>
+        Statut: <span id="status">Initialisation...</span>
+    </div>
+
+    <script type="text/javascript">
+        
+        function SetStatusChanged(status) {
+            document.getElementById('status').innerHTML = status;
+        }
+        function SetMapName(mapname) {
+            document.getElementById('mapname').innerHTML = mapname;
+        }
+    </script>
+</body>
+</html>
